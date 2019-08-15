@@ -1,0 +1,205 @@
+body {
+	background: #333;
+	color: #f1f2f6;
+
+}
+
+.navbar {
+	background: #f1f2f6;
+	opacity: 0.7;
+	border-bottom: #eccc68 1px solid;
+}
+
+.navbar a {
+	color: rgb(58, 50, 50);
+}
+a i.fa, a em {
+	color: #ffa502;
+}
+
+#home-section {
+	background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/gwanjo1.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	min-height: 700px;
+}
+
+.home-inner {
+	padding-top: 100px;
+}                                                                                                      
+
+#home-section h1 em {
+	color: #ffa502;
+}
+
+#home-section a.btn-outline-primary {
+	margin-top: 10px;
+	color: #ffa502;
+	background-color: transparent;
+	border-color: #ffa502;
+}
+#home-section a.btn-outline-primary:hover {
+	background-color: #dcdde1;
+ }
+a.btn-outline-primary:hover {
+background-color: #dcdde1;
+}
+
+#about-us-section {
+	color:  #f1f2f6;
+	background: #f5f6fa
+	opacity: 0.7;
+	border-bottom: #ffa502 1px solid;
+	border-top: #ffa502 1px solid;
+
+}
+	
+.sign-in a.btn-outline-primary {
+	margin-top: 20px;
+	color: #ffa502;
+	background-color: transparent;
+	border-color: #ffa502;
+}
+.card-shop{
+height: 401px;
+width: 445px;
+margin-left:-1px;
+}
+
+#categories a.btn-primary {
+	color: #fca502;
+	background-color:transparent;
+	border-color: #fca502;
+	margin-top: 10px
+}
+
+ #categories{
+	margin-top:50px;
+}
+
+.gwanjo{
+height: 350px;
+width: 350px;
+
+}
+.veges{
+height: 350px;
+width: 350px;
+}
+.bout{
+height: 350px;
+width: 350px;
+}
+.prov{
+	height: 350px;
+	width: 350px;
+}
+.store{
+    height: 350px;
+	width: 350px;
+}
+
+#home-setion .btn-login{
+	color: #02fce7;
+	background-color:#576574;
+	border-color: #02fce7;
+}
+
+#home-sectiom .card-body { 
+	background: black;
+	
+}
+
+#home-section #shops .container img{
+	margin-top: 10px;
+	height: 300px;
+}
+.card-body, sign-in{
+	color: #ffa502;
+} 
+#home-sections a.btn-outline-primary {
+	margin-top: 50px;
+}
+#home-sections img{
+align-content: center;
+height: 400px;
+width: 500px;
+margin-left:400px;
+}
+
+.foot{
+	height: 30px;
+	text-align: center;
+	font: bold 20px ;
+	background: #f1f2f6;
+	opacity: 0.7;
+	border-bottom: #eccc68 1px solid;
+	margin-top: -10px;
+	padding: 5px;
+}
+.foot .logo{
+	color: #ffa502;
+}
+
+.foot img{
+	float: right;
+	margin-left: 250px;
+}
+
+#home-section #categories{
+	margin-top: -200px; 
+}
+
+#home-section .shopD img{
+	height: 400px;
+	width: 400px;
+	margin-left:-1px;
+	margin-top: -1px
+}
+
+#shopdetails .col{
+	margin-top: 30px;
+	margin-left: 50px;
+}
+.col{
+	margin-top: 100px;
+	margin-left: 50px;
+}
+
+.text .lg-5{
+	margin-top: -100px;
+}
+
+#home-section .makep img{
+	float: right;
+	height: 401px;
+	width:445px;
+	margin-left:-100px;
+	margin-top: -10px
+}
+.pymnt{
+	margin-left: 300px;
+	margin-top: 40px; 
+}
+.txt{
+	color: black;
+}
+
+#home-section #shops{
+	margin-top: -50px
+}
+#submit {
+            margin: 15px;
+            width: 30vw;
+            padding: 5px;
+			font-size: 1.3rem; 
+		 }
+        
+        .errortext {
+            color: red;
+            display: none;
+        }
+        
+        .error {
+            border: 1px solid red;

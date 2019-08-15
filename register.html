@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<style>
+		 form {
+            margin: 0 300px;
+        }
+        
+        label {
+            display: block;
+			margin: 10px;
+			text-decoration-color: #ffa502;
+        
+        }
+        
+        label input {
+            width: 30vw;
+            padding: 5px;
+            font-size: 1.3rem;
+            border: 1px solid #ffa502;
+            border-radius: 5px;
+		}
+		h1 {
+            text-align: center;
+            
+            color: #ffa502;
+
+            padding: 0px;
+        }
+	</style>
+</head>
+<!--Body-->
+
+<body id="home">
+
+	<!-- nav section - This section defines the markup for the navigation -->
+	<nav class="navbar navbar-expand-sm fixed-top">
+		<div class="container">
+			<a href="index.html" class="navbar-brand"><em>Barci Market</em><i class="fa fa-shopping-cart"></i></a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"><span
+					class="navbar-toggler-icon"></span></button>
+
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a href="aboutus.html" class="nav-link">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a href="categories.html" class="nav-link">Categories</a>
+					</li>
+					<li class="nav-item">
+						<a href="contact.html" class="nav-link">Contact Us</a>
+					</li>
+					<li class="nav-item">
+						<a href="login.html" class="nav-link">Login</a>
+					</li>
+					<li class="nav-item">
+						<a href="#search" class="nav-link"><i class="fa fa-search"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<br>
+	<!--header-->
+	<header id="home-section">
+			<div class="dark-overlay">
+				<div class="home-inner">
+					<div class="container my-auto">
+							<h1>Contact Form</h1>
+							<form action="#" method="post" onsubmit="return formValidation()" name="form" class="row container">
+								<div class="col">
+									<!-- first name field -->
+									<label for="fname">
+									<p><font color="#ffa502">First Name:</font></p>
+									<input type="text" id="fname" name="firstName"  >
+									<small id="ferr"  class="errortext">First Name cannot be less than 3 characters</small>
+								</label><br>
+									<label for="lname">
+										<!-- last name -->
+										<p><font color="#ffa502">Last Name:</font></p>
+									<input type="text" id="lname" name="lastName" >
+									<small id="lerr" class="errortext">Last Name cannot be beess than 3 characters</small>
+								</label><br>
+									<label for="email">
+										<!-- other name -->
+										<p><font color="#ffa502">Email:</font></p>
+										<input type="email" id= "email" name= "email">
+								</label><br>
+								</div>
+								<div class="col">
+									<label for="subject">
+										<!-- subject of message -->
+										<p><font color="#ffa502">Subject</font></p>
+									<input type="text" id="subject" name="subject" >
+									<small id="serr" class="errortext">Subject is required!</small>
+								</label><br>
+									<label for="message">
+										<!-- message area -->
+										<p><font color="#ffa502">Message</font></p>
+									<textarea name="message" id="message" cols="60" rows="7" placeholder="Please leave a message"></textarea>
+									<small id="merr" class="errortext">Message area cannot be less than 3 words</small>
+								</label>
+								</div>
+								<!-- submit button -->
+								<div class="align-center text-center">
+									<input id="submit" type="submit" value="Get in touch" class="">
+						
+								</div>
+						
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+							<script>
+								//variable declaration
+								var firstName = document.form.fname;
+								var lastName = document.form.lname;
+								var email = document.form.email;
+								var subject = document.form.subject;
+								var message = document.getElementById('message');
+								var fullName = '';
+						
+						
+								//function declaration
+								function formValidation() {
+									//checking first name
+									if (firstName.value == "" || firstName.value < 3) {
+										firstName.setAttribute('class', "error");
+										document.getElementById("ferr").style.display = "block";
+										return false;
+									} else if
+									//checking last name and add error text
+									(lastName.value == "" || lastName.value < 3) {
+										lastName.setAttribute('class', "error");
+										document.getElementById("lerr").style.display = "block";
+										return false;
+									} else if
+									//checking for subject and adding error text
+									(subject.value == "") {
+										subject.setAttribute('class', "error");
+										document.getElementById("serr").style.display = "block";
+										return false;
+										//counting words to make sure its upto three
+									} else if (countWords() < 3) {
+										message.setAttribute('class', 'error');
+										document.getElementById("merr").style.display = "block";
+										return false;
+									} else { 
+										fullName = firstName.value + ' ' + lastName.value;
+									}
+								}
+								//functions for word count
+								function countWords() {
+									s = document.getElementById("message").value;
+									s = s.replace(/(^\s*)|(\s*$)/gi, "");
+									s = s.replace(/[ ]{2,}/gi, " ");
+									s = s.replace(/\n /, "\n");
+									return s.split(' ').length;
+								}
+								function validate() {
+										var $result = $("#result");
+										var email = $("#email").val();
+										$result.text("");
+								}
+							</script>
+					
+	<!--Footer-->
+ <footer class="foot fixed-bottom">
+	   <span class="logo">Kasuwan Barci &copy; 2019</span>
+		<img class="img1" src="f.svg">
+		<img class="img2" src="g.svg">
+		<img class="img3" src="i.svg">
+		<img class="img4" src="t.svg">
+	</footer>
+</body>
+
+</html>
